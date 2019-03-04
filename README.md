@@ -8,3 +8,10 @@ The project has 2 pages:
 If your app runs on localhost:8000:
 - http://localhost:8000 to access the dashboard
 - http://localhost:8000/admin to access the admin page
+
+To run the app:
+- Clone it
+- Setup a server
+- Setup a database
+- Change the .env file with the database info
+- Go to /admin and sync from the RSS feed
