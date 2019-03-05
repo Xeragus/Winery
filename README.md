@@ -14,4 +14,5 @@ To run the app:
 - Setup a server
 - Setup a database
 - Change the .env file with the database info
+- Run migrations
 - Go to /admin and sync from the RSS feed
