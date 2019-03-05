@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8895b138-447a-4e8c-a2c3-fae86cd6325c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin/Http/Controllers/AdminDashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Http/Controllers/AdminDashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin/Http/Controllers/AdminWinesSyncController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Http/Controllers/AdminWinesSyncController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Wines/Http/Controllers/WinesIndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Wines/Http/Controllers/WinesIndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Wines/Repositories/EloquentWineRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Wines/Repositories/EloquentWineRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Wines/Repositories/WineRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Wines/Repositories/WineRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +29,8 @@
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.40" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -30,7 +38,7 @@
           <entry key="env" value="5" />
           <entry key="js" value="21" />
           <entry key="json" value="5" />
-          <entry key="php" value="186" />
+          <entry key="php" value="211" />
           <entry key="scss" value="1" />
         </counts>
       </usages-collector>
@@ -40,7 +48,7 @@
           <entry key="Blade" value="34" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="21" />
-          <entry key="PHP" value="152" />
+          <entry key="PHP" value="177" />
           <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
@@ -50,18 +58,18 @@
           <entry key="env" value="18" />
           <entry key="js" value="185" />
           <entry key="json" value="21" />
-          <entry key="php" value="10493" />
+          <entry key="php" value="11299" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="18" />
-          <entry key="Blade" value="3015" />
+          <entry key="Blade" value="3301" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="21" />
           <entry key="JavaScript" value="185" />
-          <entry key="PHP" value="7476" />
+          <entry key="PHP" value="7996" />
           <entry key="PLAIN_TEXT" value="30" />
         </counts>
       </usages-collector>
@@ -76,37 +84,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/wines/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Wines/Http/Controllers/WinesIndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Wines/Wine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            <state relative-caret-position="785">
+              <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Wines/Factories/WinesFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#39#92#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,6 +131,7 @@
       <find>getCreatedAtColumn</find>
       <find>createdat</find>
       <find>aData</find>
+      <find>EloquentWineRepository</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,20 +154,13 @@
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/js/wine-list.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app/Admin/Http/Controllers/AdminWinesSyncController.php" />
         <option value="$PROJECT_DIR$/app/Wines/Providers/RepositoryServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Wines/Commands/CreateWinesCommand.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_01_181753_create_wines_table.php" />
         <option value="$PROJECT_DIR$/app/Wines/Normalizers/RSSFeedNormalizerInterface.php" />
         <option value="$PROJECT_DIR$/app/Wines/Providers/NormalizerServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Wines/Factories/WinesFactory.php" />
         <option value="$PROJECT_DIR$/app/Wines/Normalizers/RSSFeedNormalizer.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_03_145331_create_rss_feed_syncs_table.php" />
-        <option value="$PROJECT_DIR$/app/Wines/Wine.php" />
-        <option value="$PROJECT_DIR$/app/Wines/Repositories/EloquentWineRepository.php" />
-        <option value="$PROJECT_DIR$/app/Wines/Repositories/WineRepositoryInterface.php" />
-        <option value="$PROJECT_DIR$/app/Admin/Http/Controllers/AdminDashboardController.php" />
         <option value="$PROJECT_DIR$/app/Wines/Http/Controllers/WineListingController.php" />
         <option value="$PROJECT_DIR$/app/Wines/Http/Requests/FilterWinesRequest.php" />
         <option value="$PROJECT_DIR$/app/Wines/Http/Controllers/WinesFilterController.php" />
@@ -183,11 +179,18 @@
         <option value="$PROJECT_DIR$/app/Wines/Factories/WineOrderFactory.php" />
         <option value="$PROJECT_DIR$/app/Wines/WinesList/EloquentWineList.php" />
         <option value="$PROJECT_DIR$/app/Wines/Normalizers/WineNormalizer.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/wines/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Wines/Http/Controllers/WinesIndexController.php" />
         <option value="$PROJECT_DIR$/app/Wines/Http/Controllers/WinesListingController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
+        <option value="$PROJECT_DIR$/app/Wines/Repositories/WineRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/app/Wines/Repositories/EloquentWineRepository.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/app/Admin/Http/Controllers/AdminDashboardController.php" />
+        <option value="$PROJECT_DIR$/app/Admin/Http/Controllers/AdminWinesSyncController.php" />
+        <option value="$PROJECT_DIR$/app/Wines/Http/Controllers/WinesIndexController.php" />
+        <option value="$PROJECT_DIR$/app/Wines/Wine.php" />
+        <option value="$PROJECT_DIR$/app/Wines/Factories/WinesFactory.php" />
       </list>
     </option>
   </component>
@@ -324,6 +327,27 @@
               <item name="winery" type="b2602c69:ProjectViewProjectNode" />
               <item name="winery" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="winery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="winery" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="winery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="winery" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="winery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="winery" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="winery" type="b2602c69:ProjectViewProjectNode" />
@@ -478,17 +502,18 @@
       <workItem from="1551519892141" duration="24087000" />
       <workItem from="1551695841593" duration="1789000" />
       <workItem from="1551717672022" duration="3138000" />
+      <workItem from="1551815765087" duration="3509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33462000" />
+    <option name="totallyTimeSpent" value="36971000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
+    <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34318182" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34738526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -588,20 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wines/Commands/CreateWinesCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wines/Factories/WinesFactoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Wines/Normalizers/RSSFeedNormalizerInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -616,53 +627,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wines/Factories/WinesFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_03_145331_create_rss_feed_syncs_table.php" />
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="1157" column="31" selection-start-line="1157" selection-start-column="22" selection-end-line="1157" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wines/Wine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Http/Controllers/AdminWinesSyncController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wines/Repositories/WineRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Http/Controllers/AdminDashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wines/Repositories/EloquentWineRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -831,30 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wines/Http/Controllers/WinesIndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Wines/Http/Controllers/WinesListingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#40#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/wines/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -862,17 +807,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="459">
+          <caret line="93" column="24" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
+          <folding>
+            <element signature="e#124#146#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/wines/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-609">
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wines/Http/Controllers/WinesListingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#40#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wines/Repositories/EloquentWineRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#42#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wines/Repositories/WineRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wines/Commands/CreateWinesCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Admin/Http/Controllers/AdminDashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wines/Factories/WinesFactoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Admin/Http/Controllers/AdminWinesSyncController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#40#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wines/Http/Controllers/WinesIndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wines/Wine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="785">
+          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Wines/Factories/WinesFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#39#92#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

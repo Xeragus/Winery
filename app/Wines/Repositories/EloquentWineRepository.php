@@ -20,7 +20,12 @@ class EloquentWineRepository implements WineRepositoryInterface
 
     public function orderBy(string $field, string $direction = 'ASC'): array
     {
-        return DB::table('wines')->orderBy($field, 'ASC')->paginate(7)->items();
+        return DB::table('wines')->orderBy($field, $direction)->paginate(7)->items();
+    }
+
+    public function getLastlySyncedWine()
+    {
+        return $this->orderBy('created_at', 'DESC')[0];
     }
 
     public function store(WineInterface $wine)

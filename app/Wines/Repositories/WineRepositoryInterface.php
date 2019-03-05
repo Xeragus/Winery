@@ -12,6 +12,8 @@ interface WineRepositoryInterface
 
     public function orderBy(string $field, string $direction = 'ASC'): array;
 
+    public function getLastlySyncedWine();
+
     public function store(WineInterface $wine);
 
     public function clear();

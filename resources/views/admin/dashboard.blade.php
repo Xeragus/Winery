@@ -1,16 +1,16 @@
 @extends('layouts.admin')
 @section('content')
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <div class="container py-5">
-    <div class="header mb-5">
-        <div class="mb-2"><button href="javascript:;" class="btn btn-primary" id="update_wines_btn">Sync wines data with RSS feed</button></div>
-        <span id="last_sync">last synced on {{$wines[0]->getCreatedAt()}}</span>
-    </div>
-    <div class="table-actions-wrapper" style="width: 100%; display: block !important;">
-    </div>
-    <table id="wines_table" class="display my-5">
-        <thead>
+    <div class="alert alert-danger" role="alert" style="display: none;"></div>
+    <div class="main-wrapper">
+        <div class="header mb-5">
+            <div class="mb-2"><a href="javascript:;" class="btn btn-primary" id="update_wines_btn">Sync wines data with RSS feed</a></div>
+            <span id="last_sync">last synced on {{$lastSync}}</span>
+        </div>
+        <div class="table-actions-wrapper" style="width: 100%; display: block !important;">
+        </div>
+        <table id="wines_table" class="display my-5">
+            <thead>
             <tr>
                 <th>Title</th>
                 <th>Price</th>
@@ -18,9 +18,10 @@
                 <th>Available on</th>
                 <th>Available</th>
             </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 </div>
 <script>
 
@@ -85,9 +86,12 @@
         });
     } );
 
-    $('#update_wines_btn').click(function() {
+    $('#update_wines_btn').click(function(e) {
+        e.preventDefault();
 
-        $('.container').hide();
+        $('.alert-danger').empty().hide();
+
+        $('.main-wrapper').hide();
 
         $.ajax({
             url: '/admin/wines/sync',
@@ -96,10 +100,11 @@
                 "_token": "{{ csrf_token() }}",
             },
             success: function(response) {
+                console.log(response);
                 if (!response.error) {
-
-
-                    setTimeout(function(){ location.reload() }, 2000);
+                    location.reload();
+                } else {
+                    $('.alert-danger').append('<span>' + response.message + '</span>').show();
                 }
             }
         });

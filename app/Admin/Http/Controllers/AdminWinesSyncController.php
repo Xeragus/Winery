@@ -11,7 +11,6 @@ class AdminWinesSyncController extends Controller
     public function sync(WinesFactoryInterface $winesFactory, Dispatcher $commandBus)
     {
         $error = false;
-        $items = [];
 
         try {
             $wines = $winesFactory->buildWines();
@@ -27,7 +26,6 @@ class AdminWinesSyncController extends Controller
         return response()->json([
             'error' => $error,
             'message' => $message,
-            'items' => $items
         ]);
     }
 }
