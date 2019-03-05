@@ -23,9 +23,9 @@ class EloquentWineRepository implements WineRepositoryInterface
         return DB::table('wines')->orderBy($field, $direction)->paginate(7)->items();
     }
 
-    public function getLastlySyncedWine()
+    public function getLastlySyncedWineDatetime(): string
     {
-        return $this->orderBy('created_at', 'DESC')[0];
+        return $this->orderBy('created_at', 'DESC')[0]->created_at;
     }
 
     public function store(WineInterface $wine)
